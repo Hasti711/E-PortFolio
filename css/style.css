@@ -24,7 +24,7 @@ html {
   width: 500px;
 }
   body {
-  font-family: cursive;
+  font-family: Arial;
   padding: 0;
   margin: 0;
 }
@@ -32,13 +32,16 @@ html {
 h2 {
   margin-top: 0;
   color: blue;
-  font-family: cursive;
+  font-family: Arial;
+  font-weight: normal;
 }
 
 h3
 {
   margin-top: 2px;
   margin-bottom: 5px;
+  font-weight: normal;
+  font-size: 17px;
 }
 
 h1{
@@ -57,7 +60,7 @@ nav {
 nav ul {
   list-style: none;
   text-align: center;
-  font-family: cursive;
+  font-family: Arial;
 }
 nav ul li {
   display: inline-block;
@@ -117,7 +120,7 @@ nav.shift ul li a:hover:after {
 {
   float: left;
   margin-left: 5px;
-  font-family: cursive;
+  font-family: Arial;
 }
 * {box-sizing: border-box;}
 .mySlides {display: none;}
@@ -147,7 +150,7 @@ nav.shift ul li a:hover:after {
   font-size: 52px;
   padding: 250px;
   position: absolute;
-  font-family: cursive;
+  font-family: Arial;
   top: 0;
 }
 
@@ -221,7 +224,8 @@ nav.shift ul li a:hover:after {
 }
 .p1
 {
-  font-family: cursive;
+  font-family: Arial;
+  font-size: 19px;
 }
 .ul2
 {
@@ -248,6 +252,7 @@ nav.shift ul li a:hover:after {
   color: black;
   height: 190px;
   width: 450px;
+  font-size: 17px;
 }
 .p4
 {
@@ -284,7 +289,7 @@ nav.shift ul li a:hover:after {
   padding-right: 0;
   padding-bottom: 0;
   padding-left: 0;
-  height: 500px;
+  height: 300px;
   width: 125px;
 }
 
