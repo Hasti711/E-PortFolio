@@ -11,7 +11,7 @@
 </head>
 <body>
 <section>
-  <nav class="shift">
+  <nav class="shift slideanim slide">
     <ul>
 	  <li class="li1">
 	  <a href="index.html" class="hv1"><img src="images/logo.png" class="img1"></a>
@@ -25,7 +25,7 @@
     </ul>
   </nav>
 </section>
-<div class="slideshow-container">
+<div class="slideshow-container slideanim slide">
 
 <div class="mySlides fade">
   <div class="numbertext">Hi,&nbsp; I'm Hasti. 
@@ -45,30 +45,7 @@
   <span class="dot"></span> 
   <span class="dot"></span> 
 </div>
-
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 4000); // Change image every 4 seconds
-}
-</script>
-
-<div class="row r4" style="height: 670px;margin-top: 25px;">
+<div class="row r4 container reveal fade-bottom" style="height: 670px;margin-top: 25px;">
   <div class="column">
     <img src="images/me.jpeg" class="img2">
   </div>
@@ -84,17 +61,18 @@ function showSlides() {
     <a href="images/HASTI_MADHUKAR_PARMAR_RESUME.pdf" class="btn" download>Download Resume</a>
   </div>
 </div>
-<p class="p2" id="resume">Resume</p>
-<div class="row r4">
-  <div class="column" style="width:520px;height: 1710px;">
+<p class="p2 container reveal fade-bottom" id="resume">Resume</p>
+<div class="row r4 container reveal fade-bottom">
+  <div class="column container reveal fade-bottom" style="width:520px;height: 2010px;">
   <ul class="ul2 sidenav">
-    <li class="li2"><a class="li_a2" href="#education">Education</a></li>
-    <li class="li2"><a class="li_a2" href="#experience">Experience</a></li>
-    <li class="li2"><a class="li_a2" href="#skills">Skills</a></li>
-    <li class="li2"><a class="li_a2" href="#certificate">Certificates</a></li>
+    <li class="li2"><a class="li_a2">Education</a></li>
+    <li class="li2"><a class="li_a2">Experience</a></li>
+    <li class="li2"><a class="li_a2">Skills</a></li>
+    <li class="li2"><a class="li_a2">Certificates</a></li>
+    <!--<li class="li2"><a class="li_a2">IDE & Tools</a></li>-->
   </ul>
   </div>
-  <div class="column">
+  <div class="column container reveal fade-bottom">
     <h1>Education</h1>
     <div class="row r3">
       <div class="column c3">
@@ -126,7 +104,7 @@ function showSlides() {
     <h1>Experience</h1>
     <br><br>
     <h1>Skills</h1>
-    <div class="row">
+    <div class="row container reveal fade-bottom">
       <div class="column c4">
             <p style="margin-left:130px;">H T M L</p>
             <div class="rectangle pr1"><p style="margin-left:140px;margin-top: 30px;">90%</p></div>
@@ -136,7 +114,7 @@ function showSlides() {
             <div class="rectangle pr2"><p style="margin-left:140px;margin-top: 30px;">80%</p></div>
       </div>
     </div>
-    <div class="row">
+    <div class="row container reveal fade-bottom">
       <div class="column c4">
             <p style="margin-left:130px;">J A V A</p>
             <div class="rectangle pr3"><p style="margin-left:140px;margin-top: 30px;">65%</p></div>
@@ -146,17 +124,17 @@ function showSlides() {
             <div class="rectangle pr2"><p style="margin-left:140px;margin-top: 30px;">80%</p></div>
       </div>
     </div>
-    <div class="row">
+    <div class="row container reveal fade-bottom">
       <div class="column c4">
             <p style="margin-left:110px;">A N G U L A R</p>
             <div class="rectangle pr2"><p style="margin-left:140px;margin-top: 30px;">80%</p></div>
       </div>
-      <div class="column c4">
+      <div class="column c4 container reveal fade-bottom">
             <p style="margin-left:110px;">A N D R O I D</p>
             <div class="rectangle pr2"><p style="margin-left:140px;margin-top: 30px;">80%</p></div>
       </div>
     </div>
-    <div class="row">
+    <div class="row container reveal fade-bottom">
       <div class="column c4">
             <p style="margin-left:140px;">P H P</p>
             <div class="rectangle pr1"><p style="margin-left:140px;margin-top: 30px;">90%</p></div>
@@ -167,28 +145,37 @@ function showSlides() {
       </div>
     </div>
     <br><br>
-    <h1>Certificates</h1>[Currently I'm Pursuing "Data Science" course from website name 
+    <h1 id="#certificate">Certificates</h1>[Currently I'm Pursuing "Data Science" course from website name 
     <a href="https://olympus.mygreatlearning.com/courses/13680">"Great Learning"</a>]
     <br><br><br>
+   <!-- <h1 id="#identools">IDE and Tools</h1>
+    <div class="row r3">
+      <div class="column c3">
+        <img src="images/icon.png" class="img3">
+      </div>
+      <div class="column p3">
+        <a href="https://www.bhavans.info/school/akdoshi_jamnagar.asp" style="color: blue;">Android Studio</a></h3></p>
+      </div>
+    </div>-->
   </div>
 </div>
-<p class="p2" id="services">Services</p>
-<div class="flex-container r4">
-  <div><img src="images/icon.png" style="margin-top:10px;" class="img3"><br><br>
+<p class="p2 container reveal fade-bottom" id="services">Services</p>
+<div class="flex-container r4 container reveal fade-bottom">
+  <div class="container reveal fade-bottom"><img src="images/icon.png" style="margin-top:10px;" class="img3 container reveal fade-bottom"><br><br>
     <h3 style="font-size: 30px;">Web Development</h3><br><br>Looking to build a website or transform an existing one to drive results? We develop Professinal but simple to use website.
   </div>
-  <div><img src="images/icon.png" style="margin-top:10px;" class="img3"><br><br>
+  <div class="container reveal fade-bottom"><img src="images/icon.png" style="margin-top:10px;" class="img3"><br><br>
     <h3 style="font-size: 30px;">App Development</h3><br><br>Looking to build a trusted mobile application? We develop Professinal but simple to use application.
   </div>
 </div>
-<p class="p2" id="projects">Projects</p>
-<div class="flex-container r4">
+<p class="p2 container reveal fade-bottom" id="projects">Projects</p>
+<div class="flex-container r4 container reveal fade-bottom">
   <div class="d1"><img src="images/project1.png" class="img4"><br>Card Selling</div>
   <div class="d1"><img src="images/project2.png" class="img4"><br>Pet and it's Product Selling</div>
   <div class="d1"><img src="images/project3.png" class="img4"><br>E - Voting</div>
 </div>
-<p class="p2" id="contact">Contact</p>
-<div class="flex-container r4" style="height:300px;">
+<p class="p2 container reveal fade-bottom" id="contact">Contact</p>
+<div class="flex-container r4 container reveal fade-bottom" style="height:300px;">
   <div class="d2"><i class="fa fa-address-book desc"></i><br><u>Address</u>
     <br><br>Jamnagar , Gujrat, India</div>
   <div class="d2"><i class="fa fa-phone desc"></i><br><u>Contact Number</u><br>
@@ -198,7 +185,7 @@ function showSlides() {
   <div class="d2"><i class="fa fa-mouse-pointer desc"></i><br><u>Website</u><br>
     <br>hasti711.github.io/E-PortFolio/</div>
 </div>
-<div class="row p4">
+<div class="row p4 container reveal fade-bottom" style="background-color: black;">
   <div class="column c5">
     <h2>About<br></h2>
       <h3 style="width:145px;">
@@ -239,10 +226,51 @@ function showSlides() {
     <ul style="list-style-type:none; padding: 0;">
       <li><a href="#contact" style="color:white;text-decoration: none;">Jamnagar, Gujrat, India</a></li><br>
       <li><a href="#contact" style="color:white;text-decoration: none;">+91 9328851472</a></li><br>
-      <li><a href="#contact" style="color:white;text-decoration: none;">hastiparmarp@gmail.com</a></li><br>
-      <li><a href="#contact" style="color:white;text-decoration: none;">hasti711.github.io/E-PortFolio/</a></li>
+      <li><a href="mailto:hastiparmarp@gmail.com" style="color:white;text-decoration: none;">hastiparmarp@gmail.com</a></li><br>
+      <!--<li><a href="#contact" style="color:white;text-decoration: none;">hasti711.github.io/E-PortFolio/</a></li>-->
     </ul>
   </div>
 </div>
+  <script type="text/javascript">
+  function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 70;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+
+</script>
 </body>
 </html>
