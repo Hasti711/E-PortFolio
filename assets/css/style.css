@@ -1,0 +1,12 @@
+.r1
+{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.r2
+{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+}
